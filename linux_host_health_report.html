@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Linux Host Health Report - Expanded</title>
+<meta charset="UTF-8">
+<style>
+body { font-family: Arial, sans-serif; margin: 20px; }
+h2 { color: #2c3e50; }
+table { border-collapse: collapse; width: 100%; margin-bottom: 40px; }
+th, td { border: 1px solid black; padding: 6px; text-align: left; vertical-align: top; }
+th { background-color: #f2f2f2; }
+</style>
+</head>
+<body>
+
+<h2>Linux Host Health Report (Expanded Test Version)</h2>
+<p>Generated on: Tue Mar 03 02:15:35 IST 2026</p>
+
+<table>
+<tr>
+<th>Host</th>
+<th>CPU%</th>
+<th>MEM%</th>
+<th>Load</th>
+<th>CPU Breach</th>
+<th>MEM Breach</th>
+<th>Load Breach</th>
+<th>Top 10 CPU</th>
+<th>Top 10 MEM</th>
+<th>Details (per-pid)</th>
+</tr>
+
+<!-- HOST 1 -->
+<tr>
+<td>nyprodmsfsserver17.ms.com</td>
+<td>82.4</td>
+<td>96.64</td>
+<td>18.32</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+<td>
+PID USER COMMAND %CPU %MEM RSS VSZ ELAPSED<br>
+1001 msfsprod java 61.2 18.4 12G 16G 5-02:11:00<br>
+1002 msfsprod Controller.py 42.3 4.1 1G 2G 4-10:11:00<br>
+1003 montanap java 28.5 15.2 10G 14G 6-01:05:00<br>
+1004 oracle dbmon 12.1 2.1 500M 1G 3-02:22:00<br>
+1005 root splunkd 9.8 1.4 350M 800M 7-10:11:00<br>
+1006 msiprod java 7.2 8.3 6G 8G 2-08:44:00<br>
+1007 msfsprod nginx 6.3 0.6 120M 200M 9-11:44:00<br>
+1008 msfsprod java 5.1 10.2 8G 10G 3-05:33:00<br>
+1009 montanap kafka 4.4 3.2 900M 2G 8-01:11:00<br>
+1010 root top 3.1 0.1 50M 100M 00:15:00
+</td>
+<td>
+PID USER COMMAND %CPU %MEM RSS VSZ ELAPSED<br>
+1001 msfsprod java 61.2 18.4 12G 16G 5-02:11:00<br>
+1003 montanap java 28.5 15.2 10G 14G 6-01:05:00<br>
+1008 msfsprod java 5.1 10.2 8G 10G 3-05:33:00<br>
+1006 msiprod java 7.2 8.3 6G 8G 2-08:44:00<br>
+1002 msfsprod Controller.py 42.3 4.1 1G 2G 4-10:11:00<br>
+1009 montanap kafka 4.4 3.2 900M 2G 8-01:11:00<br>
+1004 oracle dbmon 12.1 2.1 500M 1G 3-02:22:00<br>
+1005 root splunkd 9.8 1.4 350M 800M 7-10:11:00<br>
+1007 msfsprod nginx 6.3 0.6 120M 200M 9-11:44:00<br>
+1010 root top 3.1 0.1 50M 100M 00:15:00
+</td>
+<td>
+----PID:1001---- Java Trading Engine -Xmx16G<br>
+----PID:1002---- Controller.py Batch Controller<br>
+----PID:1003---- FileLoaderLauncher -Xmx14G<br>
+----PID:1004---- Oracle DB Monitor<br>
+----PID:1005---- Splunk Monitoring Agent<br>
+----PID:1006---- Risk Engine -Xmx8G<br>
+----PID:1007---- Nginx Web Layer<br>
+----PID:1008---- Reporting Service -Xmx10G<br>
+----PID:1009---- Kafka Broker<br>
+----PID:1010---- System Top Command
+</td>
+</tr>
+
+<!-- HOST 2 -->
+<tr>
+<td>iapp3097.randolph.ms.com</td>
+<td>45.2</td>
+<td>88.11</td>
+<td>9.45</td>
+<td>NO</td>
+<td>YES</td>
+<td>NO</td>
+<td>
+PID USER COMMAND %CPU %MEM RSS VSZ ELAPSED<br>
+2001 msfsprod java 22.2 12.4 6G 8G 4-10:00:00<br>
+2002 msfsprod java 18.5 10.1 5G 7G 3-11:00:00<br>
+2003 montanap python 12.1 4.4 1G 2G 2-02:00:00<br>
+2004 root splunkd 9.4 1.2 300M 800M 6-01:00:00<br>
+2005 oracle dbmon 8.1 2.0 450M 1G 1-05:00:00<br>
+2006 msiprod java 7.2 6.3 3G 5G 2-04:00:00<br>
+2007 msfsprod nginx 6.3 0.5 100M 200M 7-08:00:00<br>
+2008 montanap kafka 5.4 3.2 900M 2G 8-02:00:00<br>
+2009 msfsprod java 4.1 7.2 4G 6G 5-03:00:00<br>
+2010 root top 3.1 0.1 50M 100M 00:10:00
+</td>
+<td>
+PID USER COMMAND %CPU %MEM RSS VSZ ELAPSED<br>
+2001 msfsprod java 22.2 12.4 6G 8G 4-10:00:00<br>
+2002 msfsprod java 18.5 10.1 5G 7G 3-11:00:00<br>
+2009 msfsprod java 4.1 7.2 4G 6G 5-03:00:00<br>
+2006 msiprod java 7.2 6.3 3G 5G 2-04:00:00<br>
+2003 montanap python 12.1 4.4 1G 2G 2-02:00:00<br>
+2008 montanap kafka 5.4 3.2 900M 2G 8-02:00:00<br>
+2005 oracle dbmon 8.1 2.0 450M 1G 1-05:00:00<br>
+2004 root splunkd 9.4 1.2 300M 800M 6-01:00:00<br>
+2007 msfsprod nginx 6.3 0.5 100M 200M 7-08:00:00<br>
+2010 root top 3.1 0.1 50M 100M 00:10:00
+</td>
+<td>
+----PID:2001---- Recon Subscriber -Xmx8G<br>
+----PID:2002---- Settlement Engine -Xmx7G<br>
+----PID:2003---- Python Batch Job<br>
+----PID:2004---- Splunk Agent<br>
+----PID:2005---- Oracle Monitor<br>
+----PID:2006---- Risk Engine -Xmx5G<br>
+----PID:2007---- Nginx Layer<br>
+----PID:2008---- Kafka Broker<br>
+----PID:2009---- Reporting Engine<br>
+----PID:2010---- System Top
+</td>
+</tr>
+
+<!-- HOST 3 -->
+<tr>
+<td>lonprodapp11.ms.com</td>
+<td>22.5</td>
+<td>64.22</td>
+<td>3.12</td>
+<td>NO</td>
+<td>NO</td>
+<td>NO</td>
+<td>
+PID USER COMMAND %CPU %MEM RSS VSZ ELAPSED<br>
+3001 msfsprod java 12.2 6.4 3G 5G 2-01:00:00<br>
+3002 msfsprod java 10.5 5.1 2G 4G 3-02:00:00<br>
+3003 montanap python 8.1 3.4 800M 1G 1-03:00:00<br>
+3004 root splunkd 6.4 1.0 200M 500M 4-01:00:00<br>
+3005 oracle dbmon 5.1 1.5 300M 700M 5-05:00:00<br>
+3006 msiprod java 4.2 4.3 2G 3G 6-06:00:00<br>
+3007 msfsprod nginx 3.3 0.4 90M 200M 7-07:00:00<br>
+3008 montanap kafka 2.4 2.2 700M 1G 3-08:00:00<br>
+3009 msfsprod java 1.1 3.2 1G 2G 2-02:00:00<br>
+3010 root top 0.5 0.1 50M 100M 00:05:00
+</td>
+<td>
+PID USER COMMAND %CPU %MEM RSS VSZ ELAPSED<br>
+3001 msfsprod java 12.2 6.4 3G 5G 2-01:00:00<br>
+3002 msfsprod java 10.5 5.1 2G 4G 3-02:00:00<br>
+3006 msiprod java 4.2 4.3 2G 3G 6-06:00:00<br>
+3009 msfsprod java 1.1 3.2 1G 2G 2-02:00:00<br>
+3003 montanap python 8.1 3.4 800M 1G 1-03:00:00<br>
+3008 montanap kafka 2.4 2.2 700M 1G 3-08:00:00<br>
+3005 oracle dbmon 5.1 1.5 300M 700M 5-05:00:00<br>
+3004 root splunkd 6.4 1.0 200M 500M 4-01:00:00<br>
+3007 msfsprod nginx 3.3 0.4 90M 200M 7-07:00:00<br>
+3010 root top 0.5 0.1 50M 100M 00:05:00
+</td>
+<td>
+Healthy host with moderate usage - no breaches
+</td>
+</tr>
+
+</table>
+</body>
+</html>

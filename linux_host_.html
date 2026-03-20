@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Linux Host Health Report</title>
+<meta charset="UTF-8">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h2 {
+    color: #2c3e50;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid black;
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+}
+th {
+    background-color: #f2f2f2;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Linux Host Health Report</h2>
+
+<p>Generated on: Fri Feb 13 01:15:35 EST 2026</p>
+
+<table border="1" cellspacing="0" cellpadding="5">
+
+<tr>
+<th>Host</th>
+<th>CPU%</th>
+<th>MEM%</th>
+<th>Load</th>
+<th>CPU Breach</th>
+<th>MEM Breach</th>
+<th>Load Breach</th>
+<th>Top 10 CPU</th>
+<th>Top 10 MEM</th>
+<th>Details (per-pid)</th>
+</tr>
+
+<tr>
+
+<td>nyprodmstsvcs03.ms.com</td>
+<td>1.7</td>
+<td>91.61</td>
+<td>4.16</td>
+<td>NO</td>
+<td>YES</td>
+<td>NO</td>
+
+<td style="max-width:400px;word-wrap:break-word;">
+
+PID USER COMMAND %CPU %MEM RSS VSZ STAT NLWP ELAPSED COMMAND<br>
+60987 msfsprod Controller.py 51.7 0.4 1085612 7829508 S1 100 4-17:09:57<br>
+5264 msiprod java 9.2 13.3 35154172 39737056 S1 440 2-17:17:07<br>
+61571 montanap java 8.5 16.2 19901040 21731656 S1 218 4-17:09:55<br>
+
+</td>
+
+<td style="max-width:400px;word-wrap:break-word;">
+
+PID USER COMMAND %CPU %MEM RSS VSZ STAT NLWP ELAPSED COMMAND<br>
+61571 montanap java 8.5 16.2 19901040 21731656 S1 218 4-17:09:55<br>
+3617 montanap java 7.1 12.4 11807384 19702456 S1 196 4-17:09:35<br>
+
+</td>
+
+<td style="max-width:800px;word-wrap:break-word;">
+
+----PID:60987----<br>
+Controller.py<br>
+/ms/dist/ocproj/PROJ/ocr/prod/controller.py<br><br>
+
+----PID:5264----<br>
+java TACalcMain<br>
+-Xmx2048M -Xms2048M<br>
+GC Log: /var/log/fs-investor-accounting.gc<br><br>
+
+----PID:61571----<br>
+FileLoaderLauncher<br>
+-Xmx16g -Xms1024m<br>
+Archive: /v/region/archive<br>
+Failure: /v/region/failure<br>
+
+</td>
+
+</tr>
+
+
+<tr>
+
+<td>iapp3097.randolph.ms.com</td>
+<td>4.2</td>
+<td>91.73</td>
+<td>5.22</td>
+<td>NO</td>
+<td>YES</td>
+<td>NO</td>
+
+<td style="max-width:400px;word-wrap:break-word;">
+
+PID USER COMMAND %CPU %MEM RSS VSZ STAT NLWP ELAPSED COMMAND<br>
+6373 msfsprod java 33.2 0.6 1727576 4292436 S1 101<br>
+
+</td>
+
+<td style="max-width:400px;word-wrap:break-word;">
+
+PID USER COMMAND %CPU %MEM RSS VSZ STAT NLWP ELAPSED COMMAND<br>
+6373 msfsprod java 33.2 0.6 1727576 4292436 S1 101<br>
+
+</td>
+
+<td style="max-width:800px;word-wrap:break-word;">
+
+----PID:6373----<br>
+Recon Subscriber<br>
+-Xmx8192m -Xms4096m<br>
+GC Log: /var/log/MSGR_SUBSCRIBER.gc<br>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,250 @@
+Hosts Info – Prompt and Summary
+Analyze host [hostname] from the Linux overload report and provide a structured analysis covering ALL key aspects in a concise format.
+________________
+
+
+🔴 IMPORTANT FORMATTING RULES (STRICT)
+1. Wherever the word TABLE: is mentioned, the output MUST be rendered as a proper table using pipe (|) separated format.
+2. Every table MUST include:
+   * Header row
+   * Separator row (--- style)
+   * Data rows
+3. Do NOT convert table sections into bullets or paragraphs.
+4. Tables must be compact and aligned.
+5. All non-table sections must use bullet points (•).
+________________
+
+
+1. QUICK HEALTH STATUS
+Output this section as a TABLE.
+TABLE: Quick Health Status
+Parameter
+	Value
+	Host
+	[hostname]
+	Report Time
+	[timestamp]
+	Overall Status
+	[🟢 / 🟡 / 🔴]
+	Critical Issues
+	[YES/NO - explanation]
+	________________
+
+
+2. SYSTEM METRICS
+TABLE: Core Metrics
+Metric
+	Value
+	Threshold
+	Status
+	Breach
+	CPU %
+	
+
+	<50%
+	
+
+	
+
+	Memory %
+	
+
+	<75%
+	
+
+	
+
+	Load Avg
+	
+
+	<10.0
+	
+
+	
+
+	Key Observations (Bullet Points Only):
+• [Observation 1]
+• [Observation 2]
+• [Observation 3]
+________________
+
+
+3. TOP CPU CONSUMERS
+TABLE: Top 10 CPU Processes
+PID
+	User
+	CPU%
+	MEM%
+	Uptime
+	Application
+	[10 rows mandatory]
+	
+
+	
+
+	
+
+	
+
+	
+
+	Key Details (Bullet Points Only):
+• Process 1: [PID, app, heap usage, purpose, concern]
+• Process 2: [...]
+• Process 3: [...]
+• Process 4: [...]
+• Process 5: [...]
+• Process 6: [...]
+• Process 7: [...]
+• Process 8: [...]
+• Process 9: [...]
+• Process 10: [...]
+________________
+
+
+4. TOP MEMORY CONSUMERS
+TABLE: Top 10 Memory Processes
+PID
+	User
+	CPU%
+	MEM%
+	Heap/RSS
+	Application
+	[10 rows mandatory]
+	
+
+	
+
+	
+
+	
+
+	
+
+	Key Details (Bullet Points Only):
+• Process 1: [PID, memory size, purpose, concern]
+• Process 2: [...]
+• Process 3: [...]
+• Process 4: [...]
+• Process 5: [...]
+• Process 6: [...]
+• Process 7: [...]
+• Process 8: [...]
+• Process 9: [...]
+• Process 10: [...]
+________________
+
+
+5. APPLICATION STACK SUMMARY
+TABLE: Services Running
+Service Type
+	Instances
+	Total Mem
+	Total CPU
+	[Rows for each service group]
+	
+
+	
+
+	
+
+	TABLE: User Accounts
+User
+	Processes
+	CPU Usage
+	Memory Usage
+	[Rows]
+	
+
+	
+
+	
+
+	TABLE: Technology Stack
+Category
+	Details
+	Languages
+	[list]
+	JDK Versions
+	[list]
+	Monitoring
+	[tools]
+	________________
+
+
+6. ISSUES & CONCERNS
+TABLE: Critical (Immediate)
+Issue
+	Description
+	Im:;pact
+	PIDs Affected
+	[Rows]
+	
+
+	
+
+	
+
+	TABLE: Warnings (Monitor)
+Issue
+	Observation
+	[Rows]
+	
+
+	Patterns Observed (Bullet Points Only):
+• Long-running: [processes > 3 days]
+• Redundancy: [duplicate services]
+• Configuration: [heap/thread concerns]
+________________
+
+
+7. ACTION PLAN
+TABLE: Immediate (< 1 hour)
+Action
+	Command / Description
+	Target PID
+	[Rows]
+	
+
+	
+
+	TABLE: Short-Term (< 4 hours)
+Action
+	Description
+	[Rows]
+	
+
+	TABLE: Long-Term (Next Week)
+Action
+	Description
+	[Rows]
+	
+
+	________________
+
+
+8. SUMMARY & KEY TAKEAWAYS
+TABLE: Executive Summary
+Parameter
+	Value
+	Host Status
+	
+
+	Primary Issue
+	
+
+	CPU Constraint
+	YES/NO
+	Memory Constraint
+	YES/NO
+	Load Constraint
+	YES/NO
+	Top 3 Action Items (Bullet Points Only):
+• [Most critical]
+• [Second]
+• [Third]
+Success Metrics (Bullet Points Only):
+• CPU Target:
+• Memory Target:
+• Load Target:
+________________
